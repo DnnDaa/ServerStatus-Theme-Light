@@ -1,8 +1,24 @@
 {
-  "routes": [
-    {
-      "src": "/json/stats.json",
-      "dest": "https://ssr.rs/json/stats.json"
-    }
-  ]
+    "routes": [
+        {
+            "src": "/json/stats.json",
+            "dest": "https://mb.xfzj6528.top/json/stats.json"
+        },
+        {
+            "src": "/detail",
+            "dest": "https://mb.xfzj6528.top/detail"
+        },
+        {
+            "src": "/map",
+            "dest": "https://mb.xfzj6528.top/map"
+        },
+        {
+            "src": "/i",
+            "dest": "https://mb.xfzj6528.top/i"
+        },
+        {
+            "src": "/report",
+            "dest": "https://mb.xfzj6528.top/report"
+        }
+    ]
 }
