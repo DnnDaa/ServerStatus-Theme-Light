@@ -22,13 +22,31 @@
     filter: grayscale(0);
     transition: filter .50s;
     }
-    .relative {
-  height: 100vh;
-  background-image: linear-gradient(transparent 90%, #d4d4d4 90%), 
-            linear-gradient(to right, transparent 90%, #d4d4d4 90%);
-  background-size: 1% 1%;
-  background-repeat: repeat;
-} 
+body::after {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      0deg,
+      black 0px,
+      black 1px,
+      transparent 1px,
+      transparent 100px
+    ),
+    linear-gradient(
+      90deg,
+      black 0px,
+      black 1px,
+      transparent 1px,
+      transparent 100px
+    );
+  background-size: 50px 50px;
+  opacity: 0.1;
+  z-index: -1;
+}
   </style>
 <body>
   <div class="px-3 sm:px-6 min-h-screen relative">
